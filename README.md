@@ -19,3 +19,9 @@ Course material for angular training Sep 14-18 2020 (20 Hour)
 - ability to navigate and enhance folder structure of an Angular application
 - become familiar with Angular terms (component, service, guard, etc...)
 - understand how to interact with a HTTP (REST) Web service
+
+## Setting up your dev machine
+- install git
+- install node
+- install yarn
+- install VSCode
