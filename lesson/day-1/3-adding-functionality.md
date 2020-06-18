@@ -1,0 +1,45 @@
+# Typical flow when adding new functionality
+Let's make the component take the sum of two inputs and display the result.
+
+1. Write a failing test case
+2. Create the function `sum()` in the `component.ts`
+3. Create the elements in the `component.html`
+  * input a `<input #a>`
+  * input b `<input #b>`
+  * result `<p></p>`
+  * button `<button type="button">`
+4. Bind button click event to the sum method `(click)="sum(a.value, b.value)"`
+
+## component.spec.ts
+```typescript
+describe('sum()', () => {
+    it('(1,1) should be 2', () => {
+        component.sum(1,1);
+        expect(component.result).toEqual(2);
+    });
+});
+```
+
+## component.ts
+```typescript
+  result: number;
+
+  sum(a: any, b: any) {
+    this.result = +a + +b;
+  }
+```
+
+## component.html
+```html
+<input #a>
+<input #b>
+<button type="button" (click)="sum(a.value, b.value)">Sum</button>
+<p>{{ result }}</p>
+```
+
+# Add a function to validate the checkbox is a number
+* use the `(change)` event listener on the `<input>`
+* use `Number.isNaN()` to check if the value is number
+  * 5 is a number `Number.isNaN(5); // returns false;`
+  * +'a' is not a number `Number.isNaN(+'a')' // returns true;` We use the `+'a'` to convert to a number
+
