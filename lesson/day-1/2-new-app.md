@@ -9,16 +9,14 @@ mkdir ~/src
 cd ~/src
 ```
 
-### 2. Install `@angular/cli` locally
+### 2. Install `@angular/cli` globally
 ```
-yarn add @angular/cli
-yarn ng new hello-world
+yarn global add @angular/cli
+yarn global list
+ng new hello-world
 ```
 * no routing (for now)
 * select > CSS
-
-Now we can delete the `package.json` and `yarn.lock` in the `src` directory
-because those were only used for creating the application.
 
 ### 3. Angular file types
 * modules
