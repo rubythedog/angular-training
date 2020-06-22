@@ -1,7 +1,7 @@
 # Typical flow when adding new functionality
 Let's make the component take the sum of two inputs and display the result.
 
-1. Write a failing test case
+1. Write the test case
 2. Create the function `sum()` in the `component.ts`
 3. Create the elements in the `component.html`
   * input a `<input #a>`
@@ -12,8 +12,8 @@ Let's make the component take the sum of two inputs and display the result.
 
 ## component.spec.ts
 ```typescript
-describe('sum()', () => {
-    it('(1,1) should be 2', () => {
+describe('sum(1,1)', () => {
+    it('should be 2', () => {
         component.sum(1,1);
         expect(component.result).toEqual(2);
     });
