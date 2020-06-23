@@ -6,7 +6,7 @@
 
 ## Install Node js
 * LTS version https://nodejs.org/en/
-* Verify the install `git --version`
+* Verify the install `node --version`
 
 ## Install Yarn
 * Stable version https://classic.yarnpkg.com/en/docs/install/#windows-stable
