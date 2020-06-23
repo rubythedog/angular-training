@@ -15,3 +15,6 @@
 ## Install Visual Studio Code
 * Stable build https://code.visualstudio.com/
 * Verify the install `code --version`
+
+## Install VS Code Extensions
+* Angular Language Service `angular.ng-template`

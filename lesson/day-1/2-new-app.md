@@ -43,6 +43,16 @@ Review the general layout of the folder structure
 
 ### 4. Hello-world
 * Run unit tests
+  * `yarn test`
+  * `npm test`
 * Run locally
+  * `yarn start`
+  * `npm start`
 * Build for production
+  * `yarn build --prod`
+  * `npm run build -- --prod`
+* Check browserlist support (IE11)
+  * `yarn browserslist`
+  * Note: you must have appropriate polyfills if you want to support all features.
 * Add alert OnInit
+  * `ngOnInit() {}`

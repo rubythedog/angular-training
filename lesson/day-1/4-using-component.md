@@ -18,7 +18,7 @@ Shortform equivalent `yarn ng g c calculator`
   describe('multiply(2,2)', () => {
     it('should be 4', () => {
       component.multiply(2,2);
-      expect(component.result).toBe(4);
+      expect(component.result).toEqual(4);
     });
   });
 ```
@@ -27,16 +27,16 @@ Shortform equivalent `yarn ng g c calculator`
 ```typescript
     result: number;
 
-    multiply(a, b) {
-        this.result = +a * +b;
+    multiply(a: number, b: number) {
+        this.result = a * b;
     }
 ```
 
-## 4. Define the template  `component.html`
+## 4. Define the template `component.html`
 ```html
 <input #a>
 <input #b>
-<button type="button" (click)="multiply(a.value, b.value)">Sum</button>
+<button type="button" (click)="multiply(+a.value, +b.value)">Multiply</button>
 <p>{{ result }}</p>
 ```
 

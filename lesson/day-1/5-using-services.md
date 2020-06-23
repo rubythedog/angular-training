@@ -2,11 +2,9 @@
 
 1. Create a service
 2. Setup provider for dependency injection
-3. Create unit test for `difference()`
-4. Create the function `difference()` 
-5. Inject service into component
-6. Call the function
-7. Move `sum()` and `multiply()` into the service
+3. Inject service into component
+4. Move `sum()` and `product()` into the service
+5. Call the function
 
 ## 1. Create `math.service.ts`
 ```
@@ -20,33 +18,17 @@ available only if the consumer imports a particular @NgModule.
 
 https://angular.io/guide/providers#provider-scope
 
-## 3. Write the specification as a unit test
-```typescript
-  describe('difference(4,2)', () => {
-    it('should be 2', () => {
-      const result = service.difference(4,2);
-      expect(result).toBe(2);
-    });
-  });
-```
-
-## 4. Write a public function
-```typescript
-  difference(a: number, b: number) {
-    return a - b;
-  }
-```
-
-## 5. Inject this service into the `calculator.component.ts`
+## 3. Inject this service into the `calculator.component.ts`
 ```typescript
 constructor(private math: MathService) {}
 ```
 
-## 6. Use math service
-```typescript
-subtract(a: number, b: number) {
-  return this.math.difference(a,b);
-}
-```
+## 4. Move the business logic from components into the service
+We keep business logic out of the components to isolate, behavior from rules.
+The rules are defined in services, and the resulting behavior is defined in the component.
 
-## 7. Move the `sum()` and `multiply()` functionality into the service
+This keeps our component resilient to change in business logic. Also this simplifies unit testing.
+Good unit tests are essential to trusting the application code because JavaScript is known to become
+spaghetti code really easily.
+
+5. Call the functions from the service.
