@@ -1,0 +1,14 @@
+{
+    "name": "api",
+    "license": "UNLICENSED",
+    "version": "0.0.0",
+    "type": "modules",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "@koa/router": "^9.0.1",
+        "koa": "^2.13.0",
+        "koa-bodyparser": "^4.3.0"
+    }
+}

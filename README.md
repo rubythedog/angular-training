@@ -2,18 +2,36 @@
 Course material for angular training Sep 14-18 2020 (20 Hour)
 
 ## Topics
-0. Tooling (git, yarn, command line tools)
-1. Components
-2. Services
-3. Routing & Route Guards
-4. Reactive Forms
-5. Observables (Rxjs)
-6. HTTPInterceptor
-7. Unit testing
-8. 3rd party modules and component libraries
-9. Modules & Refactoring
-10. Reactive data store (ngrx)
-11. Architecture & Configuration settings
+
+### General topics
+* Testing
+* Best practices
+
+### Day 1
+* Tooling (git, yarn, command line tools)
+* Components
+* Services
+
+### Day 2
+* Http Services
+* Observables (Rxjs)
+
+### Day 3
+* Reactive form
+* Reactive forms validation
+
+### Day 4
+* Routing
+* Route Guards
+* HTTPInterceptor
+
+### Day 5
+* Using 3rd party libraries (Bootstrap)
+* Modules
+* Architecture & configuration
+
+### Bonus
+* Reactive data store (ngrx)
 
 ## Objectives
 - ability to navigate and enhance folder structure of an Angular application
