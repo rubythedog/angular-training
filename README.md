@@ -15,6 +15,7 @@ Course material for angular training Sep 14-18 2020 (20 Hour)
 ### Day 2
 * Http Services
 * Observables (Rxjs)
+* Async Pipe
 
 ### Day 3
 * Reactive form
