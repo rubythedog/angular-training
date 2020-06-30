@@ -1,7 +1,11 @@
 {
   "private": true,
-  "workspaces": ["api"],
+  "workspaces": ["api", "person-book"],
   "scripts": {
-    "start-api": "yarn workspace api start"
+    "start-api": "yarn workspace api start",
+    "build": "yarn workspace person-book build",
+    "start": "yarn workspace person-book start",
+    "test": "yarn workspace person-book test",
+    "ng": "yarn workspace person-book ng"
   }
 }
