@@ -44,6 +44,10 @@ const people = new Router()
   } else {
     ctx.body = result.error;
   }
+})
+.del('/people/:email', (ctx, next) => {
+  console.log(ctx.params.email);
+  ctx.status = 204;
 });
 
 module.exports = people;
