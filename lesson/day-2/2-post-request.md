@@ -6,9 +6,11 @@
 ## Create an HTML form
 
 ```html
-<form submit="">
-  <input name="">
-  <input name="">
-  <button type="submit">
+<form (submit)="addPerson()">
+  <input name="firstName">
+  <input name="lastName">
+  <input name="email">
+  <input name="phone">
+  <button type="submit">Add Person</button>
 </form>
 ```

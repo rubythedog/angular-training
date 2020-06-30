@@ -20,11 +20,13 @@ Course material for angular training Sep 14-18 2020 (20 Hour)
 ### Day 3
 * Reactive form
 * Reactive forms validation
+* Directives
 
 ### Day 4
 * Routing
 * Route Guards
 * HTTPInterceptor
+* Custom Pipes
 
 ### Day 5
 * Using 3rd party libraries (Bootstrap)
