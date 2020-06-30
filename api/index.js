@@ -7,7 +7,6 @@ const port = 3000;
 const people = require("./controllers/people.js");
 
 app
-  .use(bodyParser())
   .use(people.routes())
   .use(ctx => {
     ctx.body = 'hello world';
