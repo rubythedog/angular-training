@@ -13,11 +13,11 @@ An example is calling the security service for a JWT (JSON web token)
 before calling the actual service.
 
 ## Parallel calls
-We need data from two services at the exact same time.
-An example is getting a list of people from the people service,
-and getting a list of genders they can select.
+We need data from two endpoints before loading the page.
+An example is getting a list of people from the people controller,
+and getting a list of genders from the gender service.
 
-## Mapping and transforming data structures (Tip)
+## (Tip) Mapping and transforming data structures
 Often times the data type we receive from the server is not exactly what we need.
 It sometimes has too much information, or the information format
 is not what we want to display. Like date time or capital casing for names.

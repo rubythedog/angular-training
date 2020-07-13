@@ -13,7 +13,7 @@ Course material for angular training Sep 14-18 2020 (20 Hour)
 * Services
 
 ### Day 2
-* Http Services
+* Http Services (GET & POST)
 * Observables (Rxjs)
 * Async Pipe
 

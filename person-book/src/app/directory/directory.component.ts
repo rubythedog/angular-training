@@ -10,6 +10,7 @@ export class DirectoryComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    // TODO(day-2): call PeopleService to getPeople$()
   }
 
 }
