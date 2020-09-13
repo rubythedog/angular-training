@@ -12,7 +12,3 @@
 * pure functions have no side effects, no state will be changed when running the function.
 
 > Sometimes this is not possible, if you need to call two http services within a function.
-
-
-# Questions
-

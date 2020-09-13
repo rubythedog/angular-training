@@ -15,7 +15,7 @@ yarn global add @angular/cli
 yarn global list
 ng new hello-world
 ```
-* `? Would you like to add Angular routing? (y/N)` no (for now)
+* `? Would you like to add Angular routing? (y/N)` y (we want Angular routing)
 * `> CSS` select CSS and press enter
 * open the project in VS Code `code hello-world`
 
@@ -39,7 +39,7 @@ Review the general layout of the folder structure
 * modules
 * components
 * services
-* tests (unit | e2e)
+* spec (unit tests | e2e tests)
 
 ### 4. Hello-world
 * Run unit tests
