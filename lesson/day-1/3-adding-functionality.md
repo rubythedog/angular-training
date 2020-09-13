@@ -49,4 +49,4 @@ describe('sum(1,1)', () => {
 
 > HINT: use `Number.isNaN()` to check if the value is number
 >  * 5 is a number `Number.isNaN(5); // returns false;`
->  * +'a' is not a number `Number.isNaN(+'a')' // returns true;` We use the `+'a'` to convert to a number
+>  * 'string' is not a number `Number.isNaN(+'string'); // returns true` We use the `+` before a variable to convert it to a number
