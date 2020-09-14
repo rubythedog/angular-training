@@ -4,7 +4,7 @@
 * Create a login component that accepts `email` and `password`.
 * Create a service `AuthService`, that posts to the webservice.
 * When the login button is clicked, use the `AuthService` to call the webservice.
-  * `http://localhost/login`
+  * send a POST request to `http://localhost:3000/auth/login`
 
 
 ## Use Case Flow
