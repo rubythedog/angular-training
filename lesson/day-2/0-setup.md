@@ -4,10 +4,13 @@
 `git clone https://github.com/linhub15/angular-training`
 
 ## Restore dependencies
-`yarn`
+* `yarn`
+* `npm cli`
 
 ## Run the angular app
-`yarn start`
+* `yarn start`
+* `npm start`
 
 ## Run the web api
-`yarn start-api`
+* `yarn start-api`
+* `npm run start-api`

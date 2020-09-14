@@ -1,13 +1,14 @@
 const Koa = require('koa');
 const cors = require('@koa/cors');
-const bodyParser = require('koa-bodyparser');
 
-const app = new Koa();
-const port = 3000;
-
+// Controllers
 const people = require("./controllers/people.js");
 const genders = require("./controllers/genders.js");
 const auth = require("./controllers/auth.js");
+
+// Initialize Web Server
+const app = new Koa();
+const port = 3000;
 
 app
   .use(cors())
