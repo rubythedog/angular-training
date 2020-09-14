@@ -17,6 +17,16 @@ We need data from two endpoints before loading the page.
 An example is getting a list of people from the people controller,
 and getting a list of genders from the gender service.
 
+### `combineLatest(observables: ...Observable, project: function): Observable`
+
+```typescript
+combineLatest(
+    people$, genders$,
+    (people, genders) => {
+        // map them to a new single data structure
+})
+```
+
 ## (Tip) Mapping and transforming data structures
 Often times the data type we receive from the server is not exactly what we need.
 It sometimes has too much information, or the information format

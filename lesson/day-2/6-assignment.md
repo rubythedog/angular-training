@@ -1,4 +1,4 @@
-# Build a login screen
+# Build a login screen (30 - 45 Minutes)
 
 ## Requirements
 * Create a login component that accepts `email` and `password`.
