@@ -7,11 +7,13 @@ const port = 3000;
 
 const people = require("./controllers/people.js");
 const genders = require("./controllers/genders.js");
+const auth = require("./controllers/auth.js");
 
 app
   .use(cors())
   .use(people.routes())
   .use(genders.routes())
+  .use(auth.routes())
   .use(ctx => {
     ctx.body = 'hello world';
   });
