@@ -5,7 +5,7 @@
 
 ## Restore dependencies
 * `yarn`
-* `npm cli`
+* `npm ci`
 
 ## Run the angular app
 * `yarn start`
