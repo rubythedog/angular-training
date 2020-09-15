@@ -3,6 +3,9 @@ Often times, a component needs to load data from multiple services.
 Especially in a service oriented architecture.
 To combine data from multiple web requests we can leverage the `rxjs` operators.
 
+More details can be found here:
+https://www.learnrxjs.io/learn-rxjs/operators
+
 1. Chaining calls
 2. Parallel calls
 3. Mapping response objects into proper data types (Tip)

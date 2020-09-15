@@ -5,6 +5,8 @@
 * Create a service `AuthService`, that posts to the webservice.
 * When the login button is clicked, use the `AuthService` to call the webservice.
   * send a POST request to `http://localhost:3000/auth/login`
+  * since POST request results are not displayed on the screen
+    we can't use async pipe, so we can use `.subscribe()`
 
 
 ## Use Case Flow
