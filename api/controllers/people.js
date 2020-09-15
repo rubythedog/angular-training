@@ -24,7 +24,7 @@ function addPerson(person) {
 const person_schema = Joi.object({
   firstName: Joi.string().required(),
   lastName: Joi.string().required(),
-  email: Joi.string().required(),
+  email: Joi.string().email().required(),
   phone: Joi.number().required()
 });
 
@@ -48,6 +48,17 @@ const people = new Router()
 .del('/people/:email', (ctx, next) => {
   console.log(ctx.params.email);
   ctx.status = 204;
+})
+.post('/people/validate/email', bodyParser(), (ctx) => {
+  const email = ctx.request.body.email;
+  const schema = Joi.string().email().required();
+  const result = schema.validate(email);
+  if (result.error) {
+    ctx.body = result;
+  } else {
+    ctx.body = '';
+  }
+
 });
 
 module.exports = people;
